@@ -7,10 +7,10 @@ import Container from 'react-bootstrap/esm/Container';
 
 function AllTheBooks(props) {
     return ( 
-        <div className="container d-flex justify-content-center flex-wrap gap-4 mt-5">
+        <div className="container d-flex justify-content-center flex-wrap gap-4 my-5 pb-4">
     {props.books.map((book, index) => (
         
-    <Card key={index} style={{ width: '18rem', height: '47rem' }}>
+    <Card key={index} className='col-12 col-md-6 col-lg-4 col-xl-3 p-0'>
       <Card.Img variant="top" src={book.img} className='h-100 object-fit-cover'/>
       <Card.Body>
         <Card.Title>{book.title}</Card.Title>
